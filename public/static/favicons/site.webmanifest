@@ -1,0 +1,12 @@
+{
+    "name": "Flynn O'Connell",
+    "short_name": "Flynndata.org",
+    "description": "Professional learner, programmer and scientist.",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "display": "standalone",
+    "dir": "ltr",
+    "lang": "en-US",
+    "orientation": "portrait-primary",
+    "start_url": "../../index.html"
+}
