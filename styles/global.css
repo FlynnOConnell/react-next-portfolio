@@ -230,3 +230,8 @@ table {
 .prose .callout > p {
   margin: 0 !important;
 }
+
+.filter-white {
+  filter: brightness(0) invert(1);
+
+}

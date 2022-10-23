@@ -17,7 +17,27 @@ module.exports = {
         headers: securityHeaders
       }
     ];
-  }
+  },
+
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/i,
+      issuer: { and: [/\.(js|ts|md)x?$/] },
+      use: [
+        {
+          loader: '@svgr/webpack',
+          options: {
+            prettier: false,
+            svgo: true,
+            svgoConfig: { plugins: [{ removeViewBox: false }] },
+            titleProp: true,
+          },
+        },
+      ],
+    });
+    return config;
+  },
+  
 };
 
 // https://nextjs.org/docs/advanced-features/security-headers
@@ -68,4 +88,6 @@ const securityHeaders = [
     key: 'Permissions-Policy',
     value: 'camera=(), microphone=(), geolocation=()'
   }
+
+  
 ];
