@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document';
-
+//  Override the default next.js Document
 export default function Document(props) {
   return (
     <Html lang="en">
