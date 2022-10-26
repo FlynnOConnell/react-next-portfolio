@@ -70,6 +70,7 @@ export default function Container(props) {
             <MobileMenu />
             <NavItem href="/" text="Home" />
             <NavItem href="/dashboard" text="Dashboard" />
+            <NavItem href="/about" text="About" />
             <NavItem href="/codesnippets" text="Code" />
           </div>
           <button

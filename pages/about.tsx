@@ -35,7 +35,6 @@ export default function About() {
             </li>
           </ul>
           <h2>Bio</h2>
-          <h3>Job Title</h3>
           <p>Flynn OConnell, Neuroscientist at Binghamton University</p>
           <p>
             Hey, I'm Flynn. I do research with the University of Binghamton. I primarily 
